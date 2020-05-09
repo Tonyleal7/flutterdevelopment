@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.deepOrange,
+        primarySwatch: Colors.yellow,
       ),
       home: MyHomePage(title: 'Welcome !'),
     );
@@ -58,7 +58,6 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
       //appBar: AppBar(
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
@@ -110,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Text(
                         ':)',
                         style: TextStyle(
-                          fontSize: 80.0, fontWeight: FontWeight.bold, color: Colors.deepOrange
+                          fontSize: 80.0, fontWeight: FontWeight.bold, color: Colors.yellow
                         )
                     ),
                     ),
@@ -121,93 +120,15 @@ class _MyHomePageState extends State<MyHomePage> {
                child: Column(children: <Widget>[
                  TextField(
                    decoration: InputDecoration(
-                     labelText:'Email',
+                     labelText:'EMAIL',
                      labelStyle: TextStyle(
                        fontFamily: 'Montserrat',
                        fontWeight: FontWeight.bold,
                        color: Colors.grey
 
                      )
-                   )
-                   ),
-                   SizedBox(height: 20.0),
-                   TextField(
-                   decoration: InputDecoration(
-                     labelText:'Password',
-                     labelStyle: TextStyle(
-                       fontFamily: 'Montserrat',
-                       fontWeight: FontWeight.bold,
-                       color: Colors.grey
-
-                     )
-                   )
-                   ),
-                   SizedBox(height: 5.0),
-                   Container(
-                     alignment: Alignment(1.0,0.0),
-                     padding: EdgeInsets.only(top:15.0,left:20.0),
-                     child: InkWell(
-                       child: Text('Forgot Password',
-                       style: TextStyle(
-                         color: Colors.deepOrange,
-                         fontWeight: FontWeight.bold,
-                         fontFamily: 'Monserrat',
-                         decoration: TextDecoration.underline,
-                       )
-                       )
-                     )
-                   ),
-                   SizedBox(height: 40),
-                   Container(
-                     height:40.0,
-                     child: Material(
-                       borderRadius: BorderRadius.circular(20.0),
-                       shadowColor: Colors.deepOrange,
-                       color: Colors.deepOrange,
-                       elevation: 7.0,
-                       child: GestureDetector(
-                         onTap: (){},
-                         child: Center(
-                           child: Text(
-                             'Login',
-                             style: TextStyle(
-                               color: Colors.white,
-                               fontWeight: FontWeight.bold,
-                               fontFamily: 'Monserrat',
-                             ),
-                           )
-                         )
-                       )
-
-                     )
-                   ),
-                   SizedBox(height:30),
-                   Container(
-                     height:40.0,
-                     child: Material(
-                       borderRadius: BorderRadius.circular(20.0),
-                       shadowColor: Colors.deepOrange,
-                       color: Colors.white,
-                       elevation: 7.0,
-                       child: GestureDetector(
-                         onTap: (){},
-                         child: Center(
-                           child: Text(
-                             'Register',
-                             style: TextStyle(
-                               color: Colors.deepOrange,
-                               fontWeight: FontWeight.bold,
-                               fontFamily: 'Monserrat',
-                             ),
-                           )
-                         )
-                       )
-
-                     )
-                   ),
-                   
-               ],
-               )
+                   ),)
+               ],)
             ),
           ],
         ),
