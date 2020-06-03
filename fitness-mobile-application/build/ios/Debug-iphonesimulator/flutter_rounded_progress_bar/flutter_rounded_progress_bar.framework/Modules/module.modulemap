@@ -1,0 +1,11 @@
+framework module flutter_rounded_progress_bar {
+  umbrella header "flutter_rounded_progress_bar-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module flutter_rounded_progress_bar.Swift {
+    header "flutter_rounded_progress_bar-Swift.h"
+    requires objc
+}
